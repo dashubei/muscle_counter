@@ -7,57 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form id="pushUp">
-        <label>
-            腕立て：目標100
-            <input type="text" id="a">
-            <p>残り回数：<span id="chest"></span></p>
-        </label>
-    </form>
-    <form id="curl">
-        <label>
-            カール：100回
-            <input type="text" id="b">
-            <p>残り回数：<span id="arm"></span></p>
-        </label>
-    </form>
-    <form id="press">
-        <label>
-            ショルダープレス：50回
-            <input type="text" id="c">
-            <p>残り回数：<span id="sholder"></span></p>
-        </label>
-    </form>
-    <script>
-        'use strict';
-
-        {
-            const pushUp = document.getElementById('pushUp');
-            const curl = document.getElementById('curl');
-            const press = document.getElementById('press');
-            let chestCount = 100;
-            let armCount = 100;
-            let sholderCount = 50;
-            
-            pushUp.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = chestCount - (document.getElementById('a').value);
-                document.getElementById('chest').textContent = Num;
-                chestCount = chestCount- (document.getElementById('a').value);
-            });
-            curl.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = armCount - (document.getElementById('b').value);
-                document.getElementById('arm').textContent = Num;
-                armCount = armCount- (document.getElementById('b').value);
-            });
-            press.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = sholderCount - (document.getElementById('c').value);
-                document.getElementById('sholder').textContent = Num;
-                sholderCount = sholderCount- (document.getElementById('c').value);
-            });
-        }
-    </script>
+    <div class="container">
+        <main class="main">
+            <div class="header">
+                <h1>筋トレカウンター</h1>
+                <input type="text" placeholder="メニュー" id="menu">
+                <input type="text" placeholder="目標回数" id="targetNum">
+                <button class="button" id="mainAdd">追加</button>
+            </div>
+          
+            <div class="list">
+                <ul id="ul">
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
