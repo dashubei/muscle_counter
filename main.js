@@ -15,20 +15,28 @@
             if (!(menu.value === "") && !(targetNum.value === "")) {
                 const newList = document.createElement('li');
                 const newSpan = document.createElement('span');
-                const newMenu = document.createTextNode(menu.value);
-                const newTargetNum = document.createTextNode(targetNum.value);
+                const newButton = document.createElement('button');
+                const newBr = document.createElement('br');
+                const newP = document.createTextNode(`残り:${targetNum.value}回`);
+                const newMenuText = document.createTextNode(menu.value);
+                const newTargetNumText = document.createTextNode(`目標回数：${targetNum.value}回`);
                 const newInput = document.createElement('input');
+        
+                newSpan.appendChild(newMenuText);
+                newButton.textContent = "追加";
                 newList.appendChild(newSpan);
-                newList.appendChild(newMenu);
-                newList.appendChild(newTargetNum);
+                newList.appendChild(newTargetNumText);
                 newList.appendChild(newInput);
-                console.log(newList);
+                newList.appendChild(newButton);
+                newList.appendChild(newBr);
+                newList.appendChild(newP);
                 ul.appendChild(newList);
+        
                 menu.value = "";
                 targetNum.value = "";
             } else {
                 console.log("二つとも入力してね");
             }
-
         });
+        
 }
