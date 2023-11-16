@@ -8,9 +8,39 @@
 </head>
 <body>
     <div class="container">
-        
+        <main class="main">
+            <div class="header">
+                <h1>筋トレカウンター</h1>
+                <input type="text" placeholder="メニュー" id="menu">
+                <input type="text" placeholder="目標回数" id="targetNum">
+                <button class="button" id="mainAdd">追加</button>
+            </div>
+
+            <div class="list">
+                <ul id="ul">
+                    <li>
+                        <span>腕立て伏せ</span>
+                        <input type="text" placeholder="何回やった">
+                        <button>追加</button>
+                        <p>残り回数:<span></span>回</p>
+                    </li>
+                    <li>
+                        <span>ショルダープレス</span>
+                        <input type="text" placeholder="何回やった">
+                        <button>追加</button>
+                        <p>残り回数:<span></span>回</p>
+                    </li>
+                    <li>
+                        <span>カール</span>
+                        <input type="text" placeholder="何回やった">
+                        <button>追加</button>
+                        <p>残り回数:<span></span>回</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
-    <form id="pushUp">
+    <!-- <form id="pushUp">
         <label>
             腕立て：目標100
             <input type="text" id="a">
@@ -30,7 +60,7 @@
             <input type="text" id="c">
             <p>残り回数：<span id="sholder"></span></p>
         </label>
-    </form>
+    </form> -->
     <script src="main.js"></script>
 </body>
 </html>

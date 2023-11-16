@@ -1,1 +1,64 @@
 @charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  outline: none;
+  width: 100px;
+  display: inline-block;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+button:hover {
+  background-color: gray;
+  color: black;
+}
+
+.main {
+  text-align: center;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  padding: 0 0 24px;
+  width: 640px;
+  margin: 64px auto;
+}
+
+.list {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+li + li {
+  margin-top: 16px;
+}
