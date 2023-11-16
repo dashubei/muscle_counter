@@ -83,4 +83,9 @@ br + p {
 
 .done {
   display: none;
+  
+p > span {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
 }
