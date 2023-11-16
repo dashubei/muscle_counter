@@ -83,6 +83,7 @@ br + p {
 
 .done {
   display: none;
+}
   
 p > span {
   color: red;
