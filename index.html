@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>筋トレ記録</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        
+    </div>
     <form id="pushUp">
         <label>
             腕立て：目標100
@@ -27,36 +31,6 @@
             <p>残り回数：<span id="sholder"></span></p>
         </label>
     </form>
-    <script>
-        'use strict';
-
-        {
-            const pushUp = document.getElementById('pushUp');
-            const curl = document.getElementById('curl');
-            const press = document.getElementById('press');
-            let chestCount = 100;
-            let armCount = 100;
-            let sholderCount = 100;
-            
-            pushUp.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = chestCount - (document.getElementById('a').value);
-                document.getElementById('chest').textContent = Num;
-                chestCount = chestCount- (document.getElementById('a').value);
-            });
-            curl.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = armCount - (document.getElementById('b').value);
-                document.getElementById('arm').textContent = Num;
-                armCount = armCount- (document.getElementById('b').value);
-            });
-            press.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const Num = sholderCount - (document.getElementById('c').value);
-                document.getElementById('sholder').textContent = Num;
-                sholderCount = sholderCount- (document.getElementById('c').value);
-            });
-        }
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
