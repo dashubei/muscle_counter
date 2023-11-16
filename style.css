@@ -59,6 +59,28 @@ button:hover {
   text-align: left;
 }
 
-li + li {
+li {
   margin-top: 16px;
+  border: 2px dotted black;
+}
+
+li > span {
+  margin-right: 8px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+span + p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+br + p {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+.done {
+  display: none;
 }
